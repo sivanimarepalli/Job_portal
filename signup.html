@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Job Portal</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-box">
+            <img src="images/login.jpg" alt="Job Portal Illustration">
+        </div>
+        <div class="form-box">
+            <h2>Create Your Account</h2>
+            <form action="/signup" method="POST">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="input-group">
+                    <select name="role" required>
+                        <option value="">Select Role</option>
+                        <option value="job-seeker">Job Seeker</option>
+                        <option value="recruiter">Recruiter</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="skills" placeholder="Skills (comma-separated)" required>
+                </div>
+                <div class="input-group">
+                    <input type="url" name="linkedin" placeholder="LinkedIn Profile (optional)">
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <div class="input-group">
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign Up</button>
+            </form>
+            <p class="toggle-text">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
